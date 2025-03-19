@@ -1,0 +1,188 @@
+.montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'MedievalSharp', cursive;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 1s ease-in-out;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 
+        0 0 0 10px #000,
+        0 0 0 20px #444,
+        0 0 0 30px #000;
+}
+
+/* Background Overlay */
+#backgroundOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity here (0.5 = 50% opacity) */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+.container {
+    padding-top: 10px;
+    padding-left: 40px; /* Increased padding to avoid overlap with the border */
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.89); /* Semi-transparent background for better readability */
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 100%;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-shadow: 
+        0 0 2px #fff, /* Subtle white glow */
+        0 0 5px #ffd700, /* Soft gold glow */
+        0 0 10px #ffd700; /* Slightly larger gold glow */
+    letter-spacing: 0.5rem; /* Spacing between words */
+}
+
+/* Results Section */
+.results {
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.result-box {
+    background-color: rgba(255, 255, 255, 0.88); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    
+}
+
+/* Ancestry Image Container */
+#ancestryImageContainer {
+    display: none;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    max-width: 100%;
+    max-height: 80%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0; /* Remove gaps between children */
+}
+
+/* Ancestry Image */
+#ancestryImage {
+    margin-bottom: 0px;
+    max-width: 100%;
+    max-height: 460px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain; /* Ensure the image fits within the container */
+    flex-grow: 1;
+}
+
+#ancestryDescription {
+    margin-bottom: 0px;
+    font: italic 1.6rem "Fira Sans", serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px #000;
+    width: 100%;
+    flex-shrink: 0; /* Prevent the description from shrinking */
+}
+
+/* Generate Button */
+#generateButton {
+    background-color: #8B4513; /* Brown color for a wooden look */
+    color: #fff;
+    font-family: 'MedievalSharp', cursive;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: 2px solid #654321; /* Darker brown border */
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #000;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#generateButton:hover {
+    font-weight: 700;
+    background-color:rgb(61, 26, 10); /* Lighter brown on hover */
+}
+
+/* Splash Screen Styles */
+#splashScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1; /* Start fully visible */
+    transition: opacity 1s ease-in-out; /* Smooth fade-out transition */
+}
+
+#splashScreen img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Footer Styles */
+footer {
+    /* margin-top: 40px; */
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ccc;
+    text-shadow: 1px 1px 2px #000;
+}
