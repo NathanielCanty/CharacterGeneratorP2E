@@ -131,6 +131,8 @@ document.getElementById("generateButton").addEventListener("click", function () 
         const ancestry = getRandomAncestry();//index of chosen ancestry
         document.getElementById("ancestryResult").textContent = `Ancestry: ${ancestry.Name}`;
 
+        soundForRandom.pause();
+        soundForRandom.currentTime = 0;
         soundForRandom.play();
 
         // Generate Category
