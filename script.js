@@ -161,7 +161,7 @@ document.getElementById("generateButton").addEventListener("click", function () 
 
                     // Re-enable the button
                     button.disabled = false;
-                }, 500)
+                }, 100)
             }, 500);
         }, 0);
     }, 500);
