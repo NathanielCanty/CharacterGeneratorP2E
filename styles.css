@@ -13,7 +13,6 @@ html, body {
 }
 
 body {
-    zoom: 90%;
     font-family: 'MedievalSharp', cursive;
     background-size: cover;
     background-position: center;
@@ -49,6 +48,7 @@ body {
 }
 
 .container {
+    transform: scale(0.85);
     padding-top: 10px;
     padding-left: 40px; /* Increased padding to avoid overlap with the border */
     padding-right: 40px;
